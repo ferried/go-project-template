@@ -1,7 +1,14 @@
 package main
-import "github.com/gin-gonic/gin"
+
+import (
+	"fmt"
+	"github.com/gin-gonic/gin"
+	"sailor/pkg/test"
+)
 
 func main() {
+	test := test.Testme()
+	fmt.Print(test)
 	r := gin.Default()
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
