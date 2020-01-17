@@ -1,19 +1,17 @@
 package main
 
 import (
-	"fmt"
-	"github.com/gin-gonic/gin"
-	"sailor/pkg/test"
+	"log"
+	"net/http"
+	"sailor/pkg/apis"
+
+	"github.com/emicklei/go-restful"
 )
 
 func main() {
-	test := test.Testme()
-	fmt.Print(test)
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
-	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+	u := apis.UserResource{}
+	restful.DefaultContainer.Add(u.WebService())
+	http.Handle("/apidocs/", http.StripPrefix("/apidocs/", http.FileServer(http.Dir("/Users/ferried/Projects/sailor/docs"))))
+	log.Printf("start listening on localhost:8080")
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
