@@ -1,6 +1,61 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"package": [],
+	"package": [
+		{
+			"checksumSHA1": "qlEzrgKgIkh7y0ePm9BNo1cNdXo=",
+			"path": "github.com/gin-contrib/sse",
+			"revision": "43f0f29dbd2b3f0feeebff91fd9cda22db296938",
+			"revisionTime": "2019-09-05T05:13:34Z"
+		},
+		{
+			"checksumSHA1": "VbbeOou+xjjnZNGxkvOxBsEbxsc=",
+			"path": "github.com/gin-gonic/gin",
+			"revision": "ace6e4c2eac3acd6e6df75fa10fff17ee9319382",
+			"revisionTime": "2020-01-16T14:40:59Z"
+		},
+		{
+			"checksumSHA1": "WnvZNuKu8KH4CxIfJUWozBDDSeY=",
+			"path": "github.com/gin-gonic/gin/binding",
+			"revision": "ace6e4c2eac3acd6e6df75fa10fff17ee9319382",
+			"revisionTime": "2020-01-16T14:40:59Z"
+		},
+		{
+			"checksumSHA1": "rST0S8cuVbM57VmJhWXhKNUkKTc=",
+			"path": "github.com/gin-gonic/gin/internal/json",
+			"revision": "ace6e4c2eac3acd6e6df75fa10fff17ee9319382",
+			"revisionTime": "2020-01-16T14:40:59Z"
+		},
+		{
+			"checksumSHA1": "iYAvSS4soo7b7wuWlaul+C32BY8=",
+			"path": "github.com/gin-gonic/gin/render",
+			"revision": "ace6e4c2eac3acd6e6df75fa10fff17ee9319382",
+			"revisionTime": "2020-01-16T14:40:59Z"
+		},
+		{
+			"checksumSHA1": "Q3FteGbNvRRUMJqbYbmrcBd2DMo=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "4e55bbcbfaa105a596caba5bbc20d392806beda9",
+			"revisionTime": "2020-01-12T01:27:37Z"
+		},
+		{
+			"checksumSHA1": "DbBm+PheV2I4RZY37xWD+5p8lcw=",
+			"path": "github.com/mattn/go-isatty",
+			"revision": "8a28c40e0162ba2a507244688ec0e46085b5ebfd",
+			"revisionTime": "2020-01-16T13:21:07Z"
+		},
+		{
+			"checksumSHA1": "8mJ7vjP4pj4Y8FH5jVT22mW5acA=",
+			"path": "github.com/ugorji/go/codec",
+			"revision": "42bc974514ff101a54c6b72a0e4dee29d96c0b26",
+			"revisionTime": "2019-08-12T10:43:08Z"
+		},
+		{
+			"checksumSHA1": "mspriBK28mrdRiQNHoThnYEFaeQ=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "1f64d6156d11335c3f22d9330b0ad14fc1e789ce",
+			"revisionTime": "2019-11-19T21:27:36Z"
+		}
+	],
 	"rootPath": "sailor"
 }
